@@ -1,0 +1,48 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Stock Picture Show{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Stock Picture Show</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+      <h1>Hello, </h1>
+      {% if name %}
+      <h1>万科A，底部头肩模式。刚完成对称三角形突破，短期向上趋势明显，得分90 </h1>
+      <h1>格力电器，突破下行直角三角形，上升趋势。刚刚突破，得分90</h1>
+      <h1>分众传媒，底部头肩向上模式。完成对称三角形突破，得分90</h1>
+      <h1>大秦铁路，底部头肩向上，刚完成对称三角形突破，得分90 </h1>
+      {% else %}
+      <h1>海康威视， 向上对称三角形，可能要突破。得分70 </h1>
+      <h1>南方航空，中期看符合底部头肩，短期看直角三角形向上突破中，得分80 </h1>
+      <h1>三一重工，也是中期看符合底部头肩，短期看直角三角形向上突破中，得分80 </h1>
+      <h1>福耀玻璃，底部头肩向上，可能还有对称下降，得分70 </h1>
+      <h1>恒瑞医药， 上三浪，第4浪，得分70 </h1>
+      <h1>伊利股份，刚刚完成对称三角形突破，上升段中，第4浪，得分80 </h1>
+      <h1>中国平安，短期看完成对称三角形突破，中期看是底部头肩向上，得分80 </h1>
+      <h1>上海医药，完成对称三角形突破，上升段中第2浪，得分70 </h1>
+      <h1>复星医药， 直角三角形向上，得分70 </h1>
+      {% endif %}
+    </div>
+</div>
+{% endblock %}
