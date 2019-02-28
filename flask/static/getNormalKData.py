@@ -31,7 +31,7 @@ def generateStockPic(stockId):
 
     pt.title(stockId + " " + name, fontproperties=getChineseFont())
 
-    data = ts.get_k_data(stockId, start='2017-01-01', end='2019-02-23')
+    data = ts.get_k_data(stockId, start='2017-01-01', end='2019-02-25')
 
     pt.plot(data['high'], c='g', )
     pt.plot(data['low'], c='r', )
